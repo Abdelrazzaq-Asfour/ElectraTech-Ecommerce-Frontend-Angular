@@ -2,7 +2,7 @@
 
 # ⚡ ElectraTech-Ecommerce-Frontend-Angular
 
-**ElectraTech** is a high-performance, modern E-commerce frontend application built with **Angular 18**. It serves as the user interface for an electronics retail store, featuring a sleek design and seamless integration with a .NET Core and PostgreSQL backend.
+**ElectraTech**  is a high-performance, modern E-commerce frontend application built with Angular 18. It serves as the user interface and dashboard for an electronics retail store, featuring a sleek design and seamless integration with a .NET Core and PostgreSQL backend.
 
 <img width="1900" height="882" alt="image" src="https://github.com/user-attachments/assets/1aeede30-9606-44a0-ad0e-65e033a2eb0d" />
 
