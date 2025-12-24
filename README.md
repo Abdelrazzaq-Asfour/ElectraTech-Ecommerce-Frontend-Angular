@@ -61,17 +61,23 @@ This frontend is configured to communicate with the **ElectraTech Backend API**.
 * **API Port**: `http://localhost:5000`.
 * **Endpoints Used**: `/api/Auth/login`, `/api/Auth/register`, and `/api/Auth/update/{id}`.
 
+## This image shows an e-commerce product page for a store called "ElectraTech," featuring a grid of electronic devices with their prices in JOD. It is a user-friendly interface that allows customers to browse items like laptops and smartphones and add them to a shopping cart.
 
 <img width="1881" height="917" alt="image" src="https://github.com/user-attachments/assets/574c0322-a96d-43d1-a5b3-7117046579b8" />
 
+## This image shows a shopping cart interface displaying a laptop and a tablet with their respective prices and "Remove" buttons. It calculates a total of $1,100.00 and provides options to either "Clear Cart" or proceed to "Checkout."
+
 <img width="830" height="397" alt="image" src="https://github.com/user-attachments/assets/d614db8b-c5a2-4973-b2dd-0679e678a7c0" />
 
+## This image shows a web-based profile update form where a user named John can edit his personal details, such as his name, email address, and password. The interface features a clean, centered card design with "Save Changes" and "Cancel" buttons to manage the account updates.
 
 <img width="532" height="546" alt="image" src="https://github.com/user-attachments/assets/d748a15b-7d46-4086-9e58-e7853cce38c6" />
 
+## The admin can view, add, edit, and delete items using the "Add New Product" button and the action buttons on each card. The dashboard also allows the admin to update their profile and manage product details like price and images.
 
 <img width="1882" height="720" alt="image" src="https://github.com/user-attachments/assets/00502001-5fd8-4403-956c-b540522c1655" />
 
+## The admin uses this form to add products by entering the name, description, price, and image URL. After filling in the details, the admin can either click "Save" to submit the product or "Cancel" to discard the changes.
 
 <img width="421" height="360" alt="image" src="https://github.com/user-attachments/assets/937734ca-ee2f-42c2-accb-5e2b58921829" />
 
