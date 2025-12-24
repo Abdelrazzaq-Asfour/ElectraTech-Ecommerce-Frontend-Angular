@@ -1,4 +1,4 @@
-
+<img width="1888" height="911" alt="image" src="https://github.com/user-attachments/assets/de9ac51b-19d7-4e60-91eb-af8fa2e4c56d" />
 # ⚡ ElectraTech-Ecommerce-Frontend-Angular
 
 **ElectraTech** is a high-performance, modern E-commerce frontend application built with **Angular 18**. It serves as the user interface for an electronics retail store, featuring a sleek design and seamless integration with a .NET Core and PostgreSQL backend.
@@ -81,6 +81,11 @@ This frontend is configured to communicate with the **ElectraTech Backend API**.
 
 <img width="421" height="360" alt="image" src="https://github.com/user-attachments/assets/937734ca-ee2f-42c2-accb-5e2b58921829" />
 
+
+
+## Market Intelligence Dashboard This admin dashboard provides a real-time overview of business performance, featuring key metrics like user growth, product inventory, and monthly profit trends. It utilizes AI-driven forecasting to help administrators visualize future profit scenarios based on sales growth and market stability.
+
+<img width="1888" height="911" alt="image" src="https://github.com/user-attachments/assets/d70549af-f6e9-4d86-9b3a-46f9ab790533" />
 
 
 
