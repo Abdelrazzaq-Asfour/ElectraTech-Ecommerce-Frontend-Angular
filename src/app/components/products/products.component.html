@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Available Products</h2>
+
+  <button *ngIf="isAdmin" routerLink="/products/create" class="btn-create">
+    Add New Product +
+  </button>
+
+  <div class="product-grid">
+    <div class="product-card" *ngFor="let product of products">
+      <img [src]="product.image" [alt]="product.name">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.price }} JOD</p>
+
+      <div class="admin-actions" *ngIf="isAdmin">
+        <button [routerLink]="['/products/edit', product.id]" class="btn-edit">Edit</button>
+        <button (click)="deleteProduct(product.id)" class="btn-delete">Delete</button>
+      </div>
+
+      <button *ngIf="isLoggedIn && !isAdmin" 
+              class="btn-add-cart" 
+              (click)="addToCart(product)">
+        Add to Cart
+      </button>
+
+      
+    <div *ngIf="!isLoggedIn" class="login-wrapper">
+      <a routerLink="/auth/login" class="login-prompt-card">
+        <i class="fas fa-lock-alt"></i>
+        <span>Login to Purchase</span>
+      </a>
+    </div>
+    </div>
+  </div>
+</div>

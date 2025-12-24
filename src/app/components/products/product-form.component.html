@@ -1,0 +1,30 @@
+<div class="form-container">
+  <h2>{{ isEditMode ? 'Edit Product' : 'Add New Product' }}</h2>
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="field">
+      <label>Product Name</label>
+      <input formControlName="name" type="text" placeholder="Enter product name">
+    </div>
+
+    <div class="field">
+      <label>Description</label>
+      <textarea formControlName="description" rows="3"></textarea>
+    </div>
+
+    <div class="field">
+      <label>Price</label>
+      <input formControlName="price" type="number">
+    </div>
+
+    <div class="field">
+      <label>Image URL</label>
+      <input formControlName="image" type="text" placeholder="https://...">
+    </div>
+
+    <div class="actions">
+      <button type="submit" [disabled]="productForm.invalid" class="save-btn">Save</button>
+      <button type="button" routerLink="/products" class="cancel-btn">Cancel</button>
+    </div>
+  </form>
+</div>

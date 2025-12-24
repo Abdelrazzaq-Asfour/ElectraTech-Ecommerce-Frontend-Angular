@@ -1,0 +1,41 @@
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/">
+      <img src="../../../photo/ha.jpg" alt="ElectraTech Logo" class="logo-img">
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+    
+    <li *ngIf="userRole === 'Admin'">
+      <a routerLink="/dashboard" class="dashboard-link" routerLinkActive="active">Dashboard</a>
+    </li>
+
+    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+  </ul>
+
+  <div class="cart-login">
+    <button *ngIf="userName && userRole !== 'Admin'" class="cart-btn" (click)="goToCart()">
+      Cart ({{ cartCount }})
+    </button>
+
+    <ng-container *ngIf="userName; else loginTemplate">
+      <div class="user-info-pill">
+        <span class="welcome-text">Welcome,</span>
+        <strong class="user-name-display">{{ userName }}</strong>
+        
+        <button class="update-profile-btn" routerLink="/auth">
+          Update Profile
+        </button>
+      </div>
+      
+      <button (click)="logout()" class="logout-pill-btn">Logout</button>
+    </ng-container>
+
+    <ng-template #loginTemplate>
+      <a routerLink="/auth" class="login-btn">Login</a>
+    </ng-template>
+  </div>
+</nav>

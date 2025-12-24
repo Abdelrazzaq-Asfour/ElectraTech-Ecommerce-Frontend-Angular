@@ -1,0 +1,510 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7d7272;
+  padding: 10px 20px;
+  color: #fff;
+
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cart-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .cart-btn {
+      background-color: #ff6f61;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: bold;
+      &:hover {
+        background-color: #ff4c3b;
+      }
+    }
+
+    .login-btn {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      &:hover {
+        background-color: #fff;
+        color: #333;
+      }
+    }
+  }
+}
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  background: rgba(255, 255, 255, 0.1); 
+  padding: 5px 15px;
+  border-radius: 50px; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  .user-name {
+    color: #ffffff;
+    font-size: 0.95rem;
+    
+    strong {
+      color: #ffcc00; 
+      margin-left: 5px;
+    }
+  }
+}
+
+.logout-btn {
+  background: transparent;
+  color: #ff4d4d; 
+  border: 1px solid #ff4d4d;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #ff4d4d;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
+  }
+}
+
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.welcome-msg {
+  color: #fff;
+  font-size: 0.9rem;
+  
+  .user-name {
+    color: #ffc107; 
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+}
+
+
+.update-btn {
+  background-color: #f8f9fa;
+  color: #333;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+}
+
+/* تصميم زر Logout */
+.logout-btn {
+  background-color: transparent;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  padding: 4px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ff4d4d;
+    color: white;
+  }
+}
+
+
+.user-info-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 50px; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+}
+
+.welcome-text {
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.name-highlight {
+  color: #ffc107; 
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.update-profile-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+
+.logout-btn-custom {
+  background-color: transparent;
+  color: #ff4444;
+  border: 1px solid #ff4444;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #ff4444;
+    color: white;
+  }
+}
+
+.cart-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.user-info-pill {
+  display: flex;
+  align-items: center;
+  background-color: #333333; 
+  padding: 5px 15px;
+  border-radius: 50px; 
+  border: 1px solid #444;
+  gap: 10px;
+}
+
+.welcome-text {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.user-name-display {
+  color: #ffc107; 
+  margin-right: 5px;
+}
+
+
+.update-profile-btn {
+  background-color: #ffc107;
+  color: #000000;
+  border: none;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+
+.logout-pill-btn {
+  background-color: transparent;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  padding: 4px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #ff4d4d;
+    color: white;
+  }
+}
+
+
+.logo-img {
+  height: 40px; 
+  width: auto;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* توزيع العناصر (لوجو في طرف، روابط في المنتصف، زر في طرف) */
+  align-items: center;           /* توسيط العناصر رأسياً */
+  padding: 10px 5%;              /* مساحة داخلية جانبية */
+  background-color: #333;        /* لون الخلفية الغامق مثل الصورة */
+  height: 70px;                  /* تحديد ارتفاع مناسب */
+}
+
+.logo-img {
+  height: 50px;                  /* حجم اللوجو */
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;                     /* مسافة بين كلمة Home و Products و About */
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;                  /* لجعل الروابط تأخذ المساحة المتبقية */
+  justify-content: center;       /* هذا السطر هو الذي يجعل الكلام في منتصف الصفحة تماماً */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;                  /* لون الخط */
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;                /* تغيير اللون عند التمرير بالماوس */
+}
+
+.cart-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* تصميم زر Login كما في الصورة */
+.login-btn, .logout-pill-btn {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;           /* زوايا دائرية بسيطة */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background: white;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* توزيع الأقسام الثلاثة: لوجو، روابط، أزرار */
+  background-color: #333333;
+  padding: 0 40px;
+  height: 80px;
+  position: relative; /* ضروري لضبط توازن العناصر */
+}
+
+/* لجعل قسم اللوجو وقسم الأزرار يأخذان نفس العرض لضمان توسيط ما بينهما */
+.logo, .cart-login {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+}
+
+.cart-login {
+  justify-content: flex-end; /* دفع أزرار الدخول لليمين */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px; /* مسافة كافية بين الكلمات */
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* توسيط الروابط في المساحة المخصصة لها */
+  flex: 2; /* إعطاء مساحة أكبر للروابط في المنتصف */
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00CCFF; /* لون ElectraTech عند التمرير */
+}
+
+/* زر Login كما في الصورة */
+.login-btn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* التنسيق العام للـ Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #424242; /* لون خلفية غامق واحترافي */
+  padding: 10px 30px;
+  height: 80px;
+  color: white;
+}
+
+/* روابط المنتصف - جعلها دائماً في المركز */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* يضمن بقاء الروابط في منتصف الشاشة تماماً */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffc107; /* تغيير اللون عند التمرير */
+}
+
+/* حاوية الأزرار جهة اليمين */
+.cart-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto; /* دفعها لليمين */
+}
+
+/* تنسيق زر السلة (اللون الأحمر في الصورة) */
+.cart-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* الكبسولة الخاصة بمعلومات المستخدم (Welcome John) */
+.user-info-pill {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05); /* خلفية خفيفة جداً */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 5px 5px 15px;
+  border-radius: 50px; /* شكل كبسولة */
+  gap: 10px;
+}
+
+.user-name-display {
+  color: #ffc107; /* اللون الأصفر للاسم كما في الصورة */
+}
+
+/* زر Update Profile داخل الكبسولة */
+.update-profile-btn {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* زر Logout (الشفاف بحدود) */
+.logout-pill-btn, .login-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logout-pill-btn:hover {
+  background: white;
+  color: black;
+}
+
+
+
+/* navbar.component.scss */
+.dashboard-link {
+  color: #ffc107 !important; /* اللون الأصفر لتمييز لوحة التحكم */
+  font-weight: bold;
+  position: relative;
+
+  &::after {
+    content: '•';
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 1.2rem;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #ffc107; /* تمييز الصفحة النشطة */
+}

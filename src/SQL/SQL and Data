@@ -1,0 +1,94 @@
+
+CREATE TABLE Categories (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(250) NOT NULL
+);
+
+
+CREATE TABLE "Users" (
+    "Id" SERIAL PRIMARY KEY,
+    "FullName" VARCHAR(100) NOT NULL,
+    "Email" VARCHAR(150) UNIQUE NOT NULL,
+    "Password" VARCHAR(255) NOT NULL,
+    "Role" VARCHAR(20) NOT NULL DEFAULT 'User'
+);
+
+
+CREATE TABLE Brands (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(250) NOT NULL,
+    Logo VARCHAR(500)
+);
+
+
+CREATE TABLE Products (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(250) NOT NULL,
+    Description VARCHAR(2500),
+    Image VARCHAR(500),
+    Price DECIMAL(10,2) NOT NULL,
+    CategoryId INT,
+    BrandId INT,
+    CONSTRAINT FK_Products_Categories FOREIGN KEY (CategoryId) 
+        REFERENCES Categories(Id) ON DELETE SET NULL,
+    CONSTRAINT FK_Products_Brands FOREIGN KEY (BrandId) 
+        REFERENCES Brands(Id) ON DELETE SET NULL
+);
+
+
+CREATE TABLE Accessories (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(250) NOT NULL,
+    Image VARCHAR(500)
+);
+
+
+CREATE TABLE ProductAccessories (
+    ProductId INT,
+    AccessoryId INT,
+    PRIMARY KEY (ProductId, AccessoryId),
+    CONSTRAINT FK_ProductAccessories_Products FOREIGN KEY (ProductId)
+        REFERENCES Products(Id) ON DELETE CASCADE,
+    CONSTRAINT FK_ProductAccessories_Accessories FOREIGN KEY (AccessoryId)
+        REFERENCES Accessories(Id) ON DELETE CASCADE
+);
+
+
+
+INSERT INTO Categories (Name) VALUES
+('Mobile Phones'),
+('Laptops'),
+('Accessories'),
+('Home Appliances');
+INSERT INTO Brands (Name, Logo) VALUES
+('Samsung', 'samsung.png'),
+('Apple', 'apple.png'),
+('Dell', 'dell.png'),
+('Sony', 'sony.png');
+
+INSERT INTO Products 
+(Name, Description, Image, Price, CategoryId, BrandId) VALUES
+('Samsung Galaxy S23', 'Samsung flagship smartphone', 's23.png', 799.99, 1, 1),
+('iPhone 15', 'Latest Apple smartphone', 'iphone15.png', 999.99, 1, 2),
+('Dell XPS 13', 'Lightweight and powerful laptop', 'xps13.png', 1299.00, 2, 3),
+('Sony Headphones', 'Noise-cancelling headphones', 'sony-headphones.png', 199.99, 3, 4);
+
+
+INSERT INTO Accessories (Name, Image) VALUES
+('Fast Charger', 'charger.png'),
+('Earbuds', 'earbuds.png'),
+('Protective Case', 'case.png'),
+('Wireless Mouse', 'mouse.png');
+INSERT INTO ProductAccessories (ProductId, AccessoryId) VALUES
+(1, 1), -- Galaxy S23 → Fast Charger
+(1, 3), -- Galaxy S23 → Protective Case
+(2, 3), -- iPhone 15 → Protective Case
+(3, 4), -- Dell XPS 13 → Wireless Mouse
+(4, 2); -- Sony Headphones → Earbuds
+
+INSERT INTO "Users" ("FullName", "Email", "Password", "Role") VALUES
+('Rakan Asfour', 'admin@electratech.com', '123', 'Admin'),
+('John Michael', 'customer@gmail.com', '333', 'User');
+
+SELECT "Email", "Password", "Role" FROM "Users";
+
